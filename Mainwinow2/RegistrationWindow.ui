@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>RegistrationWindow</class>
+	<widget class="QWidget" name="RegistrationWindow">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>1024</width>
+				<height>768</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>Register - CSE</string>
+		</property>
+		<property name="styleSheet">
+			<string notr="true">
+				/* General Background */
+				QWidget#RegistrationWindow {
+				background-color: #f0f4f8;
+				}
+
+				/* Header and Footer */
+				QFrame#headerFrame, QFrame#footerFrame {
+				background-color: #0c3b6d;
+				border: none;
+				}
+
+				/* Header Text */
+				QLabel#logoLabel {
+				color: white;
+				font-size: 20px;
+				font-weight: bold;
+				}
+
+				/* Footer Text */
+				QLabel#footerLinks {
+				color: white;
+				}
+
+				/* Page Title (Create Account) */
+				QLabel#pageTitle {
+				color: #333;
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 10px;
+				}
+
+				/* Card Container */
+				QFrame#registerCard {
+				background-color: white;
+				border: 1px solid #dcdcdc;
+				border-top: 4px solid #0c3b6d;
+				border-radius: 4px;
+				}
+
+				/* Inputs (Line Edit and Text Edit) */
+				QLineEdit, QPlainTextEdit {
+				border: 1px solid #cccccc;
+				border-radius: 4px;
+				padding: 8px;
+				font-size: 14px;
+				color: #333;
+				background-color: white;
+				}
+				QLineEdit:focus, QPlainTextEdit:focus {
+				border: 1px solid #0c3b6d;
+				}
+
+				/* Labels */
+				QLabel {
+				color: #555;
+				font-size: 13px;
+				}
+
+				/* Primary Button */
+				QPushButton#createAccountBtn {
+				background-color: #0c3b6d;
+				color: white;
+				border-radius: 4px;
+				padding: 10px;
+				font-weight: bold;
+				font-size: 14px;
+				}
+				QPushButton#createAccountBtn:hover {
+				background-color: #0a2e55;
+				}
+
+				/* Login Link */
+				QLabel#loginLink {
+				color: #0c3b6d;
+				}
+				QLabel#loginLink:hover {
+				text-decoration: underline;
+				cursor: pointer;
+				}
+			</string>
+		</property>
+		<layout class="QVBoxLayout" name="verticalLayout">
+			<property name="spacing">
+				<number>0</number>
+			</property>
+			<property name="leftMargin">
+				<number>0</number>
+			</property>
+			<property name="topMargin">
+				<number>0</number>
+			</property>
+			<property name="rightMargin">
+				<number>0</number>
+			</property>
+			<property name="bottomMargin">
+				<number>0</number>
+			</property>
+
+			<item>
+				<widget class="QFrame" name="headerFrame">
+					<property name="minimumSize">
+						<size>
+							<width>0</width>
+							<height>70</height>
+						</size>
+					</property>
+					<layout class="QHBoxLayout" name="horizontalLayout_2">
+						<property name="leftMargin">
+							<number>40</number>
+						</property>
+						<item>
+							<widget class="QLabel" name="logoLabel">
+								<property name="text">
+									<string>A  Apex Trust Bank</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<spacer name="horizontalSpacer">
+								<property name="orientation">
+									<enum>Qt::Horizontal</enum>
+								</property>
+								<property name="sizeHint" stdset="0">
+									<size>
+										<width>40</width>
+										<height>20</height>
+									</size>
+								</property>
+							</spacer>
+						</item>
+					</layout>
+				</widget>
+			</item>
+
+			<item>
+				<widget class="QWidget" name="contentArea" native="true">
+					<layout class="QVBoxLayout" name="verticalLayout_2">
+						<item>
+							<spacer name="verticalSpacer_top">
+								<property name="orientation">
+									<enum>Qt::Vertical</enum>
+								</property>
+								<property name="sizeHint" stdset="0">
+									<size>
+										<width>20</width>
+										<height>40</height>
+									</size>
+								</property>
+							</spacer>
+						</item>
+
+						<item>
+							<widget class="QLabel" name="pageTitle">
+								<property name="text">
+									<string>Create Account</string>
+								</property>
+								<property name="alignment">
+									<set>Qt::AlignCenter</set>
+								</property>
+							</widget>
+						</item>
+
+						<item>
+							<layout class="QHBoxLayout" name="horizontalLayout_3">
+								<item>
+									<spacer name="horizontalSpacer_left">
+										<property name="orientation">
+											<enum>Qt::Horizontal</enum>
+										</property>
+										<property name="sizeHint" stdset="0">
+											<size>
+												<width>40</width>
+												<height>20</height>
+											</size>
+										</property>
+									</spacer>
+								</item>
+
+								<item>
+									<widget class="QFrame" name="registerCard">
+										<property name="minimumSize">
+											<size>
+												<width>400</width>
+												<height>520</height>
+											</size>
+										</property>
+										<property name="maximumSize">
+											<size>
+												<width>400</width>
+												<height>600</height>
+											</size>
+										</property>
+										<layout class="QVBoxLayout" name="verticalLayout_3">
+											<property name="spacing">
+												<number>15</number>
+											</property>
+											<property name="leftMargin">
+												<number>30</number>
+											</property>
+											<property name="topMargin">
+												<number>30</number>
+											</property>
+											<property name="rightMargin">
+												<number>30</number>
+											</property>
+											<property name="bottomMargin">
+												<number>30</number>
+											</property>
+
+											<item>
+												<widget class="QLabel" name="labelAccNum">
+													<property name="text">
+														<string>Account Number</string>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="QLineEdit" name="accNumEdit"/>
+											</item>
+
+											<item>
+												<widget class="QLabel" name="labelName">
+													<property name="text">
+														<string>Full Name</string>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="QLineEdit" name="nameEdit"/>
+											</item>
+
+											<item>
+												<widget class="QLabel" name="labelPass">
+													<property name="text">
+														<string>Password</string>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="QLineEdit" name="passEdit">
+													<property name="echoMode">
+														<enum>QLineEdit::Password</enum>
+													</property>
+												</widget>
+											</item>
+
+											<item>
+												<widget class="QLabel" name="labelAddress">
+													<property name="text">
+														<string>Address</string>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="QPlainTextEdit" name="addressEdit">
+													<property name="maximumSize">
+														<size>
+															<width>16777215</width>
+															<height>80</height>
+														</size>
+													</property>
+												</widget>
+											</item>
+
+											<item>
+												<widget class="QPushButton" name="createAccountBtn">
+													<property name="text">
+														<string>Create Account</string>
+													</property>
+													<property name="cursor">
+														<cursorShape>PointingHandCursor</cursorShape>
+													</property>
+												</widget>
+											</item>
+
+											<item>
+												<widget class="QLabel" name="loginLink">
+													<property name="text">
+														<string>Already have an account? Log In</string>
+													</property>
+													<property name="alignment">
+														<set>Qt::AlignCenter</set>
+													</property>
+													<property name="cursor">
+														<cursorShape>PointingHandCursor</cursorShape>
+													</property>
+												</widget>
+											</item>
+										</layout>
+									</widget>
+								</item>
+
+								<item>
+									<spacer name="horizontalSpacer_right">
+										<property name="orientation">
+											<enum>Qt::Horizontal</enum>
+										</property>
+										<property name="sizeHint" stdset="0">
+											<size>
+												<width>40</width>
+												<height>20</height>
+											</size>
+										</property>
+									</spacer>
+								</item>
+							</layout>
+						</item>
+
+						<item>
+							<spacer name="verticalSpacer_bottom">
+								<property name="orientation">
+									<enum>Qt::Vertical</enum>
+								</property>
+								<property name="sizeHint" stdset="0">
+									<size>
+										<width>20</width>
+										<height>40</height>
+									</size>
+								</property>
+							</spacer>
+						</item>
+					</layout>
+				</widget>
+			</item>
+
+			<item>
+				<widget class="QFrame" name="footerFrame">
+					<property name="minimumSize">
+						<size>
+							<width>0</width>
+							<height>50</height>
+						</size>
+					</property>
+					<layout class="QHBoxLayout" name="horizontalLayout">
+						<property name="leftMargin">
+							<number>40</number>
+						</property>
+						<property name="rightMargin">
+							<number>40</number>
+						</property>
+						<item>
+							<widget class="QLabel" name="badgesLabel">
+								<property name="text">
+									<string>🛡️ Security Guaranteed</string>
+								</property>
+								<property name="styleSheet">
+									<string>color: white;</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<spacer name="horizontalSpacer_4">
+								<property name="orientation">
+									<enum>Qt::Horizontal</enum>
+								</property>
+								<property name="sizeHint" stdset="0">
+									<size>
+										<width>40</width>
+										<height>20</height>
+									</size>
+								</property>
+							</spacer>
+						</item>
+						<item>
+							<widget class="QLabel" name="footerLinks">
+								<property name="text">
+									<string>Privacy Policy    Contact Us</string>
+								</property>
+								<property name="alignment">
+									<set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+								</property>
+							</widget>
+						</item>
+					</layout>
+				</widget>
+			</item>
+		</layout>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>

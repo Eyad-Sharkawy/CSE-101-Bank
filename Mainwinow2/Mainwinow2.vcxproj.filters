@@ -71,14 +71,16 @@
     <QtMoc Include="modify_account_window.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="dashboard_window.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="RegistrationWindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="login_window.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dashboard_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
